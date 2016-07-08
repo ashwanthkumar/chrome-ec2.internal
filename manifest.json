@@ -5,7 +5,6 @@
   "description": "Converts all the ip-x-x-x-x.ec2.internal to it's IP format",
   "homepage_url": "https://github.com/ashwanthkumar/chrome-ec2.internal",
   "icons": {
-    "16": "icons/16.png",
     "48": "icons/48.png",
     "128": "icons/128.png"
   },
