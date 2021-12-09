@@ -2,10 +2,9 @@
 
 [![EC2 Private DNS to IPs](https://raw.githubusercontent.com/ashwanthkumar/chrome-ec2.internal/master/icons/256.png)](https://chrome.google.com/webstore/detail/ip-x-x-x-xec2internal-to/fjgpmnicfiedkeikinlmbpjloefhgnef)
 
-If you've ever been frustrated by the `.ec2.internal` domain names on your hadoop / spark clusters? Especially when you want to view the Task logs and the chrome shows you "DNS not resolved"? Then this plugin is for you.
+If you've ever been frustrated by the `.ec2.internal` domain names on your hadoop / spark clusters? Especially when you want to view the Task logs and the chrome shows you "DNS not resolved"? 
 
-I know there're other better ways to solve the problem. In my use-case the 
-
+STOP manually editing the location on the address bar. This plugin will do that for you.
 
 ### Chrome-Store
 It's available at chrome web store over [here](https://chrome.google.com/webstore/detail/ip-x-x-x-xec2internal-to/fjgpmnicfiedkeikinlmbpjloefhgnef)
