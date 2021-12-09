@@ -13,17 +13,21 @@ function ready(callback) {
   });
 }
 
-chrome.extension.sendMessage({}, function (response) {
-  ready(function () {
-    let observer = new MutationObserver(function (mutations) {
-      const nodes = document.querySelectorAll("a[href*='.ec2.internal']");
-      nodes.forEach(function (element) {
-        let href = element.getAttribute('href');
-        let newHref = href.replace(LINK_MATCHER, "$1.$2.$3.$4");
-        element.setAttribute('href', newHref);
-      })
-    });
+ready(function () {
+  updateLinks();
 
-    observer.observe(document, { attributes: false, childList: true, characterData: false, subtree: true });
+  let observer = new MutationObserver(function (mutations) {
+    updateLinks();
   });
+
+  observer.observe(document, { attributes: false, childList: true, characterData: false, subtree: true });
 });
+
+function updateLinks() {
+  const nodes = document.querySelectorAll("a[href*='.ec2.internal']");
+  nodes.forEach(function (element) {
+    let href = element.getAttribute('href');
+    let newHref = href.replace(LINK_MATCHER, "$1.$2.$3.$4");
+    element.setAttribute('href', newHref);
+  });
+}
