@@ -1,6 +1,6 @@
 {
   "name": "ip-x-x-x-x.ec2.internal to IPs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifest_version": 3,
   "description": "Converts all the ip-x-x-x-x.ec2.internal to it's IP format",
   "homepage_url": "https://github.com/ashwanthkumar/chrome-ec2.internal",
